@@ -848,20 +848,20 @@ const WorkingGameCatalog = () => {
       )}
 
       {/* Admin Panel Modal */}
-      {showAdminPanel && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
-          <div className="bg-gray-800 rounded-lg max-w-6xl w-full h-[90vh] flex flex-col">
-            <div className="flex items-center justify-between p-6 border-b border-gray-700 flex-shrink-0">
-              <h3 className="text-xl font-semibold text-white">Панель администратора</h3>
-              <button 
-                onClick={closeAdminPanel}
-                className="text-gray-400 hover:text-white"
-              >
-                <X className="w-6 h-6" />
-              </button>
-            </div>
+     {showAdminPanel && (
+  <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
+    <div className="bg-gray-800 rounded-lg max-w-6xl w-full max-h-[90vh] flex flex-col">
+      <div className="flex items-center justify-between p-6 border-b border-gray-700 flex-shrink-0">
+        <h3 className="text-xl font-semibold text-white">Панель администратора</h3>
+        <button 
+          onClick={closeAdminPanel}
+          className="text-gray-400 hover:text-white"
+        >
+          <X className="w-6 h-6" />
+        </button>
+      </div>
 
-            <div className="flex-1 p-6 overflow-y-auto">
+      <div className="flex-1 p-6 overflow-y-auto min-h-0">
               {/* Admin Panel Content */}
               <div className="max-w-6xl mx-auto">
                 {/* Tabs */}
